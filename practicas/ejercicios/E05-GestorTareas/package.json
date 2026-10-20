@@ -1,0 +1,9 @@
+{
+  "name": "e05-gestor-tareas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  }
+}

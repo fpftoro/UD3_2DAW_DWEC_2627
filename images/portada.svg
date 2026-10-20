@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
+  <title id="t">UD3 · Funciones, colecciones, objetos y patrones de diseño</title>
+  <desc id="d">Portada de la unidad 3 del módulo Desarrollo Web en Entorno Cliente: un array de cuatro valores pasa por map, filter y reduce hasta dar un único resultado, junto a una clase con sus propiedades y métodos.</desc>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1f3b"/>
+      <stop offset="1" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7df1e"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9c3e6"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#fondo)"/>
+  <!-- Retícula decorativa -->
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 50H1200M0 100H1200M0 150H1200M0 200H1200M0 250H1200M0 300H1200M0 350H1200"/>
+    <path d="M100 0V400M200 0V400M300 0V400M400 0V400M500 0V400M600 0V400M700 0V400M800 0V400M900 0V400M1000 0V400M1100 0V400"/>
+  </g>
+
+  <!-- Texto -->
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <text x="60" y="80" fill="#c9c3e6" font-size="22" letter-spacing="3">DESARROLLO WEB EN ENTORNO CLIENTE · 2DAW</text>
+    <rect x="60" y="100" width="120" height="6" rx="3" fill="url(#acento)"/>
+    <text x="60" y="185" fill="#ffffff" font-size="64" font-weight="700">UD3</text>
+    <text x="60" y="240" fill="#ffffff" font-size="34" font-weight="600">Funciones, colecciones,</text>
+    <text x="60" y="282" fill="#ffffff" font-size="34" font-weight="600">objetos y patrones</text>
+    <text x="60" y="340" fill="#f7df1e" font-size="22" font-weight="600">RA4 · Estructuras definidas por el usuario</text>
+  </g>
+
+  <!-- Tubería map → filter → reduce -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="16" text-anchor="middle">
+    <!-- Array de entrada -->
+    <g transform="translate(730,60)">
+      <rect x="0" y="0" width="44" height="40" rx="6" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+      <rect x="50" y="0" width="44" height="40" rx="6" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+      <rect x="100" y="0" width="44" height="40" rx="6" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+      <rect x="150" y="0" width="44" height="40" rx="6" fill="#7fd6ff" fill-opacity="0.15" stroke="#7fd6ff"/>
+      <text x="22" y="26" fill="#7fd6ff">1</text>
+      <text x="72" y="26" fill="#7fd6ff">2</text>
+      <text x="122" y="26" fill="#7fd6ff">3</text>
+      <text x="172" y="26" fill="#7fd6ff">4</text>
+    </g>
+    <path d="M827 106 V136" stroke="#c9c3e6" stroke-width="2" marker-end="url(#punta)"/>
+    <rect x="772" y="140" width="110" height="32" rx="16" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+    <text x="827" y="161" fill="#ff7edb">map(x*2)</text>
+    <g transform="translate(730,190)">
+      <rect x="0" y="0" width="44" height="40" rx="6" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+      <rect x="50" y="0" width="44" height="40" rx="6" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+      <rect x="100" y="0" width="44" height="40" rx="6" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+      <rect x="150" y="0" width="44" height="40" rx="6" fill="#ff7edb" fill-opacity="0.15" stroke="#ff7edb"/>
+      <text x="22" y="26" fill="#ff7edb">2</text>
+      <text x="72" y="26" fill="#ff7edb">4</text>
+      <text x="122" y="26" fill="#ff7edb">6</text>
+      <text x="172" y="26" fill="#ff7edb">8</text>
+    </g>
+    <path d="M827 236 V266" stroke="#c9c3e6" stroke-width="2" marker-end="url(#punta)"/>
+    <rect x="760" y="270" width="134" height="32" rx="16" fill="#28c840" fill-opacity="0.15" stroke="#28c840"/>
+    <text x="827" y="291" fill="#28c840">filter(x&gt;3)</text>
+    <path d="M827 306 V330" stroke="#c9c3e6" stroke-width="2" marker-end="url(#punta)"/>
+    <rect x="750" y="334" width="154" height="32" rx="16" fill="#f7df1e" fill-opacity="0.15" stroke="#f7df1e"/>
+    <text x="827" y="355" fill="#f7df1e">reduce(+) → 18</text>
+  </g>
+
+  <!-- Clase -->
+  <g transform="translate(960,80)" font-family="Consolas, 'Courier New', monospace">
+    <rect width="210" height="240" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#c9c3e6" stroke-width="2"/>
+    <rect width="210" height="44" rx="12" fill="#ffffff" fill-opacity="0.12"/>
+    <text x="105" y="29" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">CuentaBancaria</text>
+    <path d="M0 44H210M0 130H210" stroke="#c9c3e6" stroke-opacity="0.6"/>
+    <g font-size="15">
+      <text x="18" y="74" fill="#7fd6ff">#saldo: number</text>
+      <text x="18" y="104" fill="#7fd6ff">titular: string</text>
+      <text x="18" y="160" fill="#ff7edb">ingresar(importe)</text>
+      <text x="18" y="190" fill="#ff7edb">retirar(importe)</text>
+      <text x="18" y="220" fill="#ff7edb">get saldo()</text>
+    </g>
+  </g>
+</svg>
